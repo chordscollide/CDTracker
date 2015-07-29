@@ -1,0 +1,21 @@
+C:\Users\Jason\documents\visual studio 2015\Projects\CDTracker\CDTracker\bin\Debug\CDTracker.dll.config
+C:\Users\Jason\documents\visual studio 2015\Projects\CDTracker\CDTracker\bin\Debug\CDTracker.dll
+C:\Users\Jason\documents\visual studio 2015\Projects\CDTracker\CDTracker\bin\Debug\CDTracker.pdb
+C:\Users\Jason\documents\visual studio 2015\Projects\CDTracker\CDTracker\bin\Debug\Advanced Combat Tracker.exe
+C:\Users\Jason\documents\visual studio 2015\Projects\CDTracker\CDTracker\bin\Debug\GammaJul.LgLcd.dll
+C:\Users\Jason\documents\visual studio 2015\Projects\CDTracker\CDTracker\bin\Debug\ICSharpCode.SharpZipLib.dll
+C:\Program Files (x86)\Advanced Combat Tracker\CDTracker.dll.config
+C:\Program Files (x86)\Advanced Combat Tracker\CDTracker.dll
+C:\Program Files (x86)\Advanced Combat Tracker\CDTracker.pdb
+C:\Users\Jason\Documents\Visual Studio 2015\Projects\CDTracker\CDTracker\obj\Debug\MainWindow.g.cs
+C:\Users\Jason\Documents\Visual Studio 2015\Projects\CDTracker\CDTracker\obj\Debug\Window1.g.cs
+C:\Users\Jason\Documents\Visual Studio 2015\Projects\CDTracker\CDTracker\obj\Debug\CDTracker_MarkupCompile.cache
+C:\Users\Jason\Documents\Visual Studio 2015\Projects\CDTracker\CDTracker\obj\Debug\CDTracker_MarkupCompile.lref
+C:\Users\Jason\Documents\Visual Studio 2015\Projects\CDTracker\CDTracker\obj\Debug\MainWindow.baml
+C:\Users\Jason\Documents\Visual Studio 2015\Projects\CDTracker\CDTracker\obj\Debug\Window1.baml
+C:\Users\Jason\Documents\Visual Studio 2015\Projects\CDTracker\CDTracker\obj\Debug\CDTracker.g.resources
+C:\Users\Jason\Documents\Visual Studio 2015\Projects\CDTracker\CDTracker\obj\Debug\CDTracker.Properties.Resources.resources
+C:\Users\Jason\Documents\Visual Studio 2015\Projects\CDTracker\CDTracker\obj\Debug\CDTracker.csproj.GenerateResource.Cache
+C:\Users\Jason\Documents\Visual Studio 2015\Projects\CDTracker\CDTracker\obj\Debug\CDTracker.dll
+C:\Users\Jason\Documents\Visual Studio 2015\Projects\CDTracker\CDTracker\obj\Debug\CDTracker.pdb
+C:\Users\Jason\Documents\Visual Studio 2015\Projects\CDTracker\CDTracker\obj\Debug\CDTracker.csprojResolveAssemblyReference.cache

@@ -1,0 +1,15 @@
+﻿<Window x:Class="CDTracker.Display"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CDTracker"
+        mc:Ignorable="d"
+        Title="Cooldowns" Height="450" Width="650"
+        MinHeight="450" MinWidth="650">
+        
+    <Grid>
+        <TextBox x:Name="CooldownTB" HorizontalAlignment="Stretch"  Margin="8,8,8,8" Text="" VerticalAlignment="Stretch" HorizontalScrollBarVisibility="Visible" VerticalScrollBarVisibility="Visible"/>
+
+    </Grid>
+</Window>
