@@ -6,3 +6,5 @@ Track Raid CD's so you know when they're up!
 Download the zip, extract it.
 Add CDTracker/obj/Debug/CDTracker.dll to ACT's plugins.
 If you notice a bug or a incorrect CD, let me know so I can fix it!
+
+Note: You will likely have to right click the the .dll and click "Unblock".
