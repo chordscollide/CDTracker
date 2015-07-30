@@ -590,25 +590,26 @@ namespace CDTracker
                     {
                         LookupString = "Potion";
                     }
-                    timee = timee.AddSeconds(CDLookup(LookupString, uint.Parse(match.Groups[5].Value, System.Globalization.NumberStyles.HexNumber))); //****
+                    if (CDLookup(LookupString, uint.Parse(match.Groups[5].Value, System.Globalization.NumberStyles.HexNumber)) > 1) {
+                        timee = timee.AddSeconds(CDLookup(LookupString, uint.Parse(match.Groups[5].Value, System.Globalization.NumberStyles.HexNumber))); //****
 
-                    Cooldown tempCD = new Cooldown()
-                    {
-                        userID = uint.Parse(match.Groups[5].Value, System.Globalization.NumberStyles.HexNumber),
-                        userName = match.Groups[6].Value,
-                        targetID = uint.Parse(match.Groups[8].Value, System.Globalization.NumberStyles.HexNumber),
-                        targetName = match.Groups[9].Value,
-                        cooldownName = LookupString,
-                        TimeUsed = timeu,
-                        TimeAvailable = timee,
-                        TimeRemaining = timeu.Subtract(timee)
-                    };
+                        Cooldown tempCD = new Cooldown()
+                        {
+                            userID = uint.Parse(match.Groups[5].Value, System.Globalization.NumberStyles.HexNumber),
+                            userName = match.Groups[6].Value,
+                            targetID = uint.Parse(match.Groups[8].Value, System.Globalization.NumberStyles.HexNumber),
+                            targetName = match.Groups[9].Value,
+                            cooldownName = LookupString,
+                            TimeUsed = timeu,
+                            TimeAvailable = timee,
+                            TimeRemaining = timeu.Subtract(timee)
+                        };
 
-                    lock (CDList)
-                    {
-                        CDList.Add(tempCD);
-                    }
-                    break;
+                        lock (CDList)
+                        {
+                                CDList.Add(tempCD);                           
+                        }
+                        break; }
                 }
             }
         }
@@ -644,13 +645,13 @@ namespace CDTracker
                                   .Select(d => d.First()).ToList().OrderByDescending(x => x.TimeRemaining.TotalSeconds).ToList();
                     string tempText = "";
 
-                        tempText = "CD Name".PadRight(40) + "\t| " + "User's Name".PadRight(40) + "\t| " + "Time Left".PadRight(5) + Environment.NewLine;
+                        tempText = String.Format("{0,-30}\t| {1,-30}\t| {2,10}", "CD Name", "User's Name", "Time Left") + Environment.NewLine;
                         tempText += "----------------------------------------------------------------------------------------------".PadRight(5) + Environment.NewLine;
 
                     foreach (Cooldown cd in CDList)
                     {
 
-                        tempText += cd.cooldownName.PadRight(40) + "\t| " + cd.userName.PadRight(40) + "\t| " + (cd.TimeRemaining.TotalSeconds * -1).ToString("F1").PadRight(5) + Environment.NewLine;
+                        tempText += String.Format("{0,-30}\t| {1,-30}\t| {2,10}" ,cd.cooldownName, cd.userName, (cd.TimeRemaining.TotalSeconds * -1).ToString("F1")) + Environment.NewLine;
 
                     }
                     display.Dispatcher.Invoke((Action)(() =>
@@ -679,7 +680,8 @@ namespace CDTracker
                 if (cdname.Equals(buff.name, StringComparison.InvariantCultureIgnoreCase) && job == buff.job)
                 {
                     i = buff.CD;
-                }
+                    break;
+                } 
             }
             return i;
         }
